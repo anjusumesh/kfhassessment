@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "492909ea-995b-498c-9749-28dd307d2ace",
+		"name": "kfh_tech_assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26608673"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8089/courses",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"coursename\": \"Architecture\",\r\n        \"duration\": 24\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8089/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/courses/add",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"coursename\": \"Python\",\r\n        \"duration\": 3\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8089/courses/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"courses",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/courses/find/2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/courses/find/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"courses",
+						"find",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/courses/modify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"coursename\": \"Pollitics2\",\r\n    \"duration\": 15\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8089/courses/modify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"courses",
+						"modify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/courses/delete/3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/courses/delete/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"courses",
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/students",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 8,\r\n        \"name\": \"saniya\",\r\n        \"email\": \"qqawe@gmail.com\",\r\n        \"courseid\": 9\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8089/students/modify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"students",
+						"modify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/students/add",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"name\": \"jofie\",\r\n        \"email\": \"abssc@gmail.com\",\r\n        \"courseid\": 9\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8089/students/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"students",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/students/delete/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/students/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"students",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/students/getByCid/3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8089/students/getByCid/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"students",
+						"getByCid",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,38 @@
+CREATE TABLE `courses` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `coursename` varchar(45) NOT NULL,
+  `duration` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `coursename_UNIQUE` (`coursename`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `students` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `courseid` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email_UNIQUE` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+insert into test_db.courses (coursename, duration) values ("English", '6');
+insert into test_db.courses (coursename, duration) values ("Science", '12');
+insert into test_db.courses (coursename, duration) values ("Maths", '6');
+insert into test_db.courses (coursename, duration) values ("Pollitics", '12');
+insert into test_db.courses (coursename, duration) values ("Arabic", '6');
+insert into test_db.courses (coursename, duration) values ("Literature", '12');
+
+insert into test_db.students (name, email,courseid) values ('joe','abc@gmail.com','1');
+insert into test_db.students (name, email,courseid) values ('joel','abcd@gmail.com','1');
+insert into test_db.students (name, email,courseid) values ('sam','awe@gmail.com','2');
+insert into test_db.students (name, email,courseid) values ('ann','add@gmail.com','2');
+
+insert into test_db.students (name, email,courseid) values ('samad','awqe@gmail.com','3');
+insert into test_db.students (name, email,courseid) values ('anna','adqd@gmail.com','3');
+insert into test_db.students (name, email,courseid) values ('saniya','qqawe@gmail.com','3');
+insert into test_db.students (name, email,courseid) values ('anian','adqqd@gmail.com','3');
+
+

@@ -1,0 +1,18 @@
+JSON requests
+------------
+
+course
+    {
+        "id": 2,
+        "coursename": "Science",
+        "duration": 12
+    }
+
+
+student
+ {
+        
+        "name": "jofie",
+        "email": "abssc@gmail.com",
+        "courseid": 9
+    }
